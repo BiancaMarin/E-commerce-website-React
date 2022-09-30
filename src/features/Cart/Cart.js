@@ -38,6 +38,9 @@ export function Cart({ product }) {
           <ProdCartComponent key={product.id} product={product} />
         ))}
       </div>
+      <div>
+        <p>Total: </p>
+      </div>
       <Footer />
     </>
   );
