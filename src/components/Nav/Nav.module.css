@@ -1,0 +1,127 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222831;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+  padding: 1.5rem 4rem;
+  width: 100%;
+}
+
+.navbar .logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #32e0c4;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar .logo-bag {
+  padding-right: 1rem;
+  color: #fff;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-menu li {
+  padding: 0 1rem;
+  position: relative;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  color: #32e0c4;
+}
+
+.navbar-menu li:hover::after {
+  content: '';
+  width: 30%;
+  height: 1px;
+  background-color: #32e0c4;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.welcome {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.welcome:hover {
+  color: #32e0c4;
+}
+
+.angle-down {
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.dropdown-menu:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.dropdown-menu hr {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu .user-card {
+  padding-right: 10px;
+}
+
+.dropdown-menu .logout {
+  padding-right: 10px;
+}
+
+.dropdown-menu .mailbox {
+  padding-right: 10px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li a {
+  color: #222831;
+}
+
+.dropdown-menu li:hover {
+  font-weight: 600;
+}

@@ -1,0 +1,40 @@
+.message-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin-top: 1rem;
+}
+
+.message-section .message-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  box-shadow: 0px 2px 20px 0 #d1d1d1;
+  border-radius: 10px;
+  color: #222831;
+  padding: 0.5rem 0;
+}
+
+.message-section .form-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 0.6rem;
+}
+
+.message-unread {
+  font-size: 0.9rem;
+}
+.message-read {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.message-section .form-display .read {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}

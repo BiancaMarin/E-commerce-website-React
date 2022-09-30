@@ -1,0 +1,44 @@
+.clocks {
+  height: 600px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  margin: 0 4rem;
+}
+
+.container .image img {
+  height: 500px;
+  width: 450px;
+}
+
+.container .content h1 {
+  font-size: 2.5rem;
+  color: #222831;
+}
+
+.container .content {
+  justify-self: start;
+  align-self: center;
+}
+
+.container .content button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 8px;
+  border: 1px solid #222831;
+  background-color: transparent;
+  color: #222831;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.container .content button:hover {
+  background-color: #222831;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}

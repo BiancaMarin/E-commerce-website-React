@@ -1,0 +1,53 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 4rem 0 4rem;
+}
+
+img {
+  height: 280px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.section .info-obag {
+  padding-left: 2rem;
+}
+
+.section .info-obag h1 {
+  color: #32e0c4;
+  padding-bottom: 1rem;
+}
+
+.section .info-research h1 {
+  color: #32e0c4;
+  padding: 1rem 0;
+}
+
+.section .info-everywhere h1 {
+  color: #32e0c4;
+  padding: 1rem 0;
+}
+
+.section-colors {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-colors .info-colors h1 {
+  color: #32e0c4;
+}
+
+.section-colors .images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 2rem;
+}

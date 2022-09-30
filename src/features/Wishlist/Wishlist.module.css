@@ -1,0 +1,39 @@
+.products-list {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.products-list h3 {
+  grid-column: 1/-1;
+  font-weight: 400;
+}
+
+.heart {
+  padding-right: 0.5rem;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+.search-bar input {
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+}
+
+.search-bar button {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

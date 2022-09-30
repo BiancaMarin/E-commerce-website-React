@@ -1,0 +1,10 @@
+.messages-page {
+  padding-left: 4rem;
+}
+
+.messages-page h1 {
+  color: #222831;
+  font-weight: 400;
+  margin-top: 1rem;
+  border-bottom: 1px solid #32e0c4;
+}

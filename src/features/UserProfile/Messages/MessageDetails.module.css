@@ -1,0 +1,25 @@
+.message-details {
+  padding: 1rem 0 1rem 4rem;
+}
+
+.message-details .title {
+  border-bottom: 1px solid #32e0c4;
+}
+
+.message-details .email-address {
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.message-details .email-address .email {
+  color: #222831;
+}
+
+.message-details .text {
+  font-weight: 600;
+}
+
+.message-details .user-text {
+  color: #222831;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,109 @@
+.register h2 {
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+
+.register .paragraph {
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.register form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 4rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  padding-top: 2rem;
+  width: 80%;
+}
+
+.form label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.form input {
+  width: 12rem;
+  border: none;
+  border-bottom: 1px solid #222831;
+}
+
+.form input::placeholder {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender .gender-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.gender .gender-split {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.gender .gender-split input {
+  width: 1rem;
+}
+
+.register-btn {
+  padding-top: 1.5rem;
+}
+
+.form .register-btn {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.form .register-btn button {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid #222831;
+  background-color: transparent;
+  color: #222831;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.form .register-btn button:hover {
+  background-color: #222831;
+  border: none;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+  color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.email-existes {
+  color: red;
+  background-color: #ffdede;
+  width: 150px;
+  border-radius: 8px;
+}

@@ -1,0 +1,78 @@
+.user-title {
+  font-weight: 400;
+  padding: 2rem 0 0 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 2rem 0 2rem 4rem;
+}
+
+.container .image {
+  width: 200px;
+  margin-right: 3rem;
+  border-radius: 8px;
+}
+
+.second-column .name {
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid #222831;
+  margin-bottom: 1rem;
+}
+
+.second-column .name .lastName {
+  font-size: 2rem;
+  color: #222831;
+}
+
+.second-column ul li:first-child {
+  list-style: none;
+}
+
+.btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.btns .edit {
+  margin-left: 1rem;
+}
+.btns .delete {
+  margin-left: 1rem;
+}
+
+.btns button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  background-color: #dddddd;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #06113c;
+  background-color: transparent;
+  color: #06113c;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #222831;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem;
+  }
+}

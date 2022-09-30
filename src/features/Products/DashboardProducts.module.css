@@ -1,0 +1,159 @@
+.products-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products-page .dashboard {
+  justify-self: center;
+  align-self: center;
+}
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 0;
+  border-bottom: 1px solid grey;
+}
+
+.dashboard .products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard .products .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.dashboard .products .btns button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background-color: #dddddd;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #06113c;
+  background-color: transparent;
+  color: #06113c;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.dashboard .products .btns button:hover {
+  background-color: #222831;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+
+.dashboard .categories {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard .categories .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.dashboard .categories .btns button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background-color: #dddddd;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #06113c;
+  background-color: transparent;
+  color: #06113c;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.dashboard .categories .btns button:hover {
+  background-color: #222831;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+
+.dashboard .filter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard .filter .filter-color {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  background-color: #222831;
+}
+
+.dashboard .filter .filter-color .brown {
+  color: brown;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .black {
+  color: black;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .yellow {
+  color: yellow;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .blue {
+  color: blue;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .pink {
+  color: pink;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .white {
+  color: white;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .red {
+  color: red;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .orange {
+  color: orange;
+  cursor: pointer;
+}
+.dashboard .filter .filter-color .turquoise {
+  color: turquoise;
+  cursor: pointer;
+}
+
+.products-page .title {
+  justify-self: center;
+  align-self: center;
+  margin: 2rem 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.toolbox {
+  padding-right: 1rem;
+}

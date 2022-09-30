@@ -1,0 +1,102 @@
+.product-details {
+  padding: 0 4rem;
+}
+
+.product-details .container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.product-details .container .image-container {
+  align-self: start;
+  justify-self: start;
+}
+
+.image {
+  height: 400px;
+  box-shadow: 0px 2px 20px 0 #d1d1d1;
+}
+
+.product-details .container .title {
+  color: #222831;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.product-details .container .star {
+  color: #ffb200;
+}
+
+.product-details .container .details .price,
+span {
+  color: red;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.product-details .container .details .material strong {
+  padding-right: 0.5rem;
+}
+
+.product-details .container .details .material {
+  padding-bottom: 1rem;
+  color: #222831;
+}
+
+.product-details .container .details .color strong {
+  padding-right: 0.5rem;
+}
+
+.product-details .container .details .color {
+  padding-bottom: 1rem;
+  color: #222831;
+}
+
+.product-details .container .details .description {
+  border-bottom: 1px solid #cfd2cf;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+  color: #222831;
+  font-size: 0.8rem;
+}
+
+.product-details .container .details .btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.product-details .container .details .btns button {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: 1px solid #222831;
+  background-color: transparent;
+  color: #222831;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.product-details .container .details .btns button:hover {
+  background-color: #222831;
+  border: none;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+  color: #fff;
+}
+
+.product-details .container .details .btns .heart {
+  padding-left: 0.5rem;
+}
+.product-details .container .details .btns .cart {
+  padding-left: 0.5rem;
+}
+
+.message {
+  color: green;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}

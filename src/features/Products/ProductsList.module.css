@@ -1,0 +1,31 @@
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.search-bar {
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+}
+
+.search-bar button {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

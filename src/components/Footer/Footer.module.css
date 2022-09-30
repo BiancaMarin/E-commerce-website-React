@@ -1,0 +1,96 @@
+.footer {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  background-color: #222831;
+  padding-left: 4rem;
+  margin-top: 1rem;
+}
+
+.footer .logo a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #32e0c4;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.footer .logo {
+  margin: 1rem 0;
+}
+
+.footer .logo-bag {
+  color: #eeeeee;
+  padding-right: 1rem;
+}
+
+.navbar {
+  justify-self: start;
+  align-self: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 1.5rem;
+}
+
+.navbar .navbar-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.navbar .navbar-icons .follow {
+  color: #686d76;
+}
+
+.facebook,
+.instagram,
+.youtube {
+  height: 20px;
+  color: #eeeeee;
+}
+
+.navbar .navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu li {
+  padding: 0 1rem;
+  position: relative;
+}
+
+.navbar-menu li a {
+  color: #eeeeee;
+  font-size: 0.8rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  color: #32e0c4;
+}
+
+.navbar-menu li:hover::after {
+  content: '';
+  width: 30%;
+  height: 1px;
+  background-color: #32e0c4;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  color: #686d76;
+}
+
+.copyright-icon {
+  padding-right: 0.5rem;
+}
