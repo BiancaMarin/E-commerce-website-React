@@ -4,7 +4,7 @@ import { ProductCard } from '../../Products/ProductCard';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export function Bags() {
+export function Bags({ cart, setCart }) {
   const [productsBag, setProductsBag] = useState(null);
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -51,7 +51,12 @@ export function Bags() {
             }
           })
           .map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              cart={cart}
+              setCart={setCart}
+            />
           ))}
       </div>
     </>

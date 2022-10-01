@@ -1,30 +1,14 @@
-import { useEffect, useState } from 'react';
-import { Footer } from '../../components/Footer/Footer';
-import { Nav } from '../../components/Nav/Nav';
 import styles from './Cart.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { Link } from 'react-router-dom';
-import { useAuthContext } from '../Auth/AuthContext';
 import { ProdCartComponent } from './ProdCartComponent';
+import { Nav } from '../../components/Nav/Nav';
+import { Footer } from '../../components/Footer/Footer';
 
-export function Cart({ product }) {
-  const [cartProducts, setCartProducts] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:3005/api/cart')
-      .then((res) => res.json())
-      .then((data) => setCartProducts(data));
-  }, []);
-
-  if (!cartProducts) {
-    return <strong>Loading your wishlist products...</strong>;
-  }
-
+export function Cart({ cart, setCart }) {
   return (
     <>
       <Nav />
-
       <div className={styles['products-cart']}>
         <h1>
           <FontAwesomeIcon
@@ -34,8 +18,20 @@ export function Cart({ product }) {
           {''}
           Your Shopping Cart
         </h1>
-        {cartProducts.map((product) => (
-          <ProdCartComponent key={product.id} product={product} />
+      </div>
+      <div>
+        {cart.length === 0 && (
+          <>
+            <div>Cart is empty</div>
+          </>
+        )}
+        {cart.map((product) => (
+          <ProdCartComponent
+            key={product.id}
+            product={product}
+            cart={cart}
+            setCart={setCart}
+          />
         ))}
       </div>
       <div>

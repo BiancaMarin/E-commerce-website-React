@@ -39,18 +39,6 @@ export function ProductDetails() {
 
     setMessage('The product was added successfully!');
   }
-  async function handleAddCart() {
-    const data = await fetch('http://localhost:3005/cart', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-        Authorization: `Bearer ${accessToken}`,
-      },
-      body: JSON.stringify({ ...product, userId: user.id }),
-    }).then((res) => res.json());
-
-    setMessage('The product was added successfully!');
-  }
 
   return (
     <>
@@ -92,13 +80,7 @@ export function ProductDetails() {
                   className={styles['heart']}
                 />
               </button>
-              <button onClick={handleAddCart}>
-                Add to cart
-                <FontAwesomeIcon
-                  icon={solid('cart-shopping')}
-                  className={styles['cart']}
-                />
-              </button>
+
               {user?.isAdmin && (
                 <>
                   <Link to={`/products/edit/${product.id}`}>

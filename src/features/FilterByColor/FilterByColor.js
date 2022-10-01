@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import styles from './FilterByColor.module.css';
 import { ProductCard } from '../Products/ProductCard';
 
-export function FilterByColor({ color }) {
+export function FilterByColor({ color, cart, setCart }) {
   const [products, setProducts] = useState(null);
-  console.log(color);
+
   useEffect(() => {
     fetch('http://localhost:3005/api/products/')
       .then((res) => res.json())
@@ -22,7 +22,12 @@ export function FilterByColor({ color }) {
             return product.color === color;
           })
           .map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              cart={cart}
+              setCart={setCart}
+            />
           ))}
       </div>
     </>
