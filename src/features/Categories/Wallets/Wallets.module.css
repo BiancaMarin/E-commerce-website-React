@@ -4,28 +4,28 @@
   justify-content: start;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
 }
 
 .search-bar {
-  align-self: flex-end;
-  width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 3rem;
-  padding-top: 0.5rem;
+  padding-right: 4rem;
+  position: relative;
   margin-bottom: 1rem;
 }
 
 .search-bar input {
   border-radius: 8px;
-  border: 1px solid #dddddd;
+  border: 1px solid #7f8487;
 }
 
-.search-bar button {
-  width: 20px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.search-bar input::placeholder {
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
+.search-icon {
+  position: relative;
+  right: 20px;
+  top: 2px;
 }

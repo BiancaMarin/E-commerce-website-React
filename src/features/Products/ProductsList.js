@@ -3,8 +3,11 @@ import { ProductCard } from './ProductCard';
 import styles from './ProductsList.module.css';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 
-export function ProductsList({ cart, setCart }) {
+export function ProductsList() {
+  const { cart, setCart } = useContext(CartContext);
   const [products, setProducts] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -32,9 +35,10 @@ export function ProductsList({ cart, setCart }) {
             placeholder="Search..."
             onChange={handleSearchTerm}
           />
-          <button type="submit" className={styles['btn']}>
-            <FontAwesomeIcon icon={solid('magnifying-glass')} />{' '}
-          </button>
+          <FontAwesomeIcon
+            icon={solid('magnifying-glass')}
+            className={styles['search-icon']}
+          />{' '}
         </form>
       </div>
       <div className={styles['products-list']}>
@@ -49,12 +53,7 @@ export function ProductsList({ cart, setCart }) {
             }
           })
           .map((product) => (
-            <ProductCard
-              cart={cart}
-              setCart={setCart}
-              key={product.id}
-              product={product}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
       </div>
     </>

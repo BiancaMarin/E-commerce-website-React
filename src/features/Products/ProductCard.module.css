@@ -38,3 +38,25 @@
   padding-right: 0.5rem;
   color: #d65a31;
 }
+
+.btns button {
+  border: none;
+  background-color: #dddddd;
+  cursor: pointer;
+  width: 250px;
+  padding: 0.2rem;
+  border-radius: 8px;
+  border: 1px solid #06113c;
+  background-color: transparent;
+  color: #06113c;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cart {
+  padding-left: 0.5rem;
+}
+
+.trash {
+  padding-left: 0.5rem;
+}

@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import styles from './ProductCard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 
-export function ProductCard({ product, cart, setCart }) {
+export function ProductCard({ product }) {
+  const { cart, setCart } = useContext(CartContext);
   return (
     <article className={styles['card']}>
       <Link to={`/productDetails/${product.id}`}>
@@ -18,7 +21,7 @@ export function ProductCard({ product, cart, setCart }) {
           {product.price}
         </p>
       </Link>
-      <div>
+      <div className={styles['btns']}>
         {cart.includes(product) ? (
           <button
             onClick={() => {
@@ -27,8 +30,8 @@ export function ProductCard({ product, cart, setCart }) {
           >
             Remove from cart
             <FontAwesomeIcon
-              icon={solid('cart-shopping')}
-              className={styles['cart']}
+              icon={solid('trash')}
+              className={styles['trash']}
             />
           </button>
         ) : (

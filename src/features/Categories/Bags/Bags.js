@@ -3,8 +3,11 @@ import styles from './Bags.module.css';
 import { ProductCard } from '../../Products/ProductCard';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext } from 'react';
+import { CartContext } from '../../Cart/CartContext';
 
-export function Bags({ cart, setCart }) {
+export function Bags() {
+  const { cart, setCart } = useContext(CartContext);
   const [productsBag, setProductsBag] = useState(null);
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,9 +35,10 @@ export function Bags({ cart, setCart }) {
             placeholder="Search..."
             onChange={handleSearchTerm}
           />
-          <button type="submit" className={styles['btn']}>
-            <FontAwesomeIcon icon={solid('magnifying-glass')} />{' '}
-          </button>
+          <FontAwesomeIcon
+            icon={solid('magnifying-glass')}
+            className={styles['search-icon']}
+          />{' '}
         </form>
       </div>
       <div className={styles['products-list']}>

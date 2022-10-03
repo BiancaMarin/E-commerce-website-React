@@ -4,11 +4,23 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { ProdCartComponent } from './ProdCartComponent';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
+import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
-export function Cart({ cart, setCart }) {
+export function Cart() {
+  const [total, setTotal] = useState();
+
+  const { cart, setCart } = useContext(CartContext);
+
+  useEffect(() => {
+    setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
+  }, [cart]);
+
   return (
     <>
       <Nav />
+
       <div className={styles['products-cart']}>
         <h1>
           <FontAwesomeIcon
@@ -20,9 +32,12 @@ export function Cart({ cart, setCart }) {
         </h1>
       </div>
       <div>
+        <p className={styles['total']}>Total: {total} EUR </p>
+      </div>
+      <div>
         {cart.length === 0 && (
           <>
-            <div>Cart is empty</div>
+            <div className={styles['empty']}>Your cart is empty.</div>
           </>
         )}
         {cart.map((product) => (
@@ -34,9 +49,7 @@ export function Cart({ cart, setCart }) {
           />
         ))}
       </div>
-      <div>
-        <p>Total: </p>
-      </div>
+
       <Footer />
     </>
   );

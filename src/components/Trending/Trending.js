@@ -94,6 +94,7 @@ export function Trending() {
                     </span>
                     {product.price}
                   </p>
+                  <button></button>
                 </div>
               </div>
             </div>

@@ -1,22 +1,26 @@
 import styles from './ProdCartComponent.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { useAuthContext } from '../Auth/AuthContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
-export function ProdCartComponent({ product }) {
-  const [counter, setCounter] = useState(0);
+export function ProdCartComponent({ product, setCart, cart }) {
+  const [counter, setCounter] = useState(1);
 
   function handleClickIncrease() {
     setCounter(counter + 1);
   }
   function handleClickDecrease() {
-    setCounter(counter + 1);
-    if (counter === 0) {
-      setCounter(counter + 1);
+    if (counter === 1) {
+      setCounter(counter + 0);
+    } else {
+      setCounter(counter - 1);
     }
   }
+
+  const subTotal = (counter * product.price).toFixed(2);
 
   return (
     <article className={styles['card']}>
@@ -38,14 +42,21 @@ export function ProdCartComponent({ product }) {
         <output className={styles['output']}>{counter}</output>
         <button onClick={handleClickIncrease}>+</button>
         <div>
-          <button className={styles['remove-btn']}>
-            Remove from cart
-            <FontAwesomeIcon
-              icon={solid('trash')}
-              className={styles['trash']}
-            />
-          </button>
-          <p className={styles['subtotal']}>Subtotal:</p>
+          {cart.includes(product) && (
+            <button
+              className={styles['remove-btn']}
+              onClick={() => {
+                setCart(cart.filter((c) => c.id !== product.id));
+              }}
+            >
+              Remove from cart
+              <FontAwesomeIcon
+                icon={solid('trash')}
+                className={styles['trash']}
+              />
+            </button>
+          )}
+          <p className={styles['subtotal']}>Subtotal: {subTotal}</p>
         </div>
       </div>
     </article>

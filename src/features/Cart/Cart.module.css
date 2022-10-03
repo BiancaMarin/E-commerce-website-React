@@ -1,7 +1,7 @@
 .products-cart {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: rem;
   color: #222831;
 }
 
@@ -13,4 +13,17 @@
 
 .products-cart .cart {
   padding-right: 0.5rem;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+  color: #32e0c4;
+  font-weight: 600;
+}
+
+.empty {
+  padding-left: 4rem;
 }

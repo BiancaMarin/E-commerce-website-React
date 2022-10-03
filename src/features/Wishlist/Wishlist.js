@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
-import { WishProductCard } from './WishProductCard';
 import { Footer } from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
 import styles from './Wishlist.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { ProductCard } from '../Products/ProductCard';
+import { useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 
 export function Wishlist() {
+  const { cart, setCart } = useContext(CartContext);
   const [wishProducts, setWishProducts] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -59,7 +62,12 @@ export function Wishlist() {
             }
           })
           .map((product) => (
-            <WishProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              cart={cart}
+              setCart={setCart}
+            />
           ))}
       </div>
       <Footer />

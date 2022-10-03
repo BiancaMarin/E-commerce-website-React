@@ -11,9 +11,10 @@ import { Clocks } from '../Categories/Clocks/Clocks';
 import { Wallets } from '../Categories/Wallets/Wallets';
 import { FilterByColor } from '../FilterByColor/FilterByColor';
 import { useAuthContext } from '../Auth/AuthContext';
-import { Cart } from '../Cart/Cart';
+import { useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 
-export function DashboardProducts({ cart, setCart }) {
+export function DashboardProducts() {
   const [products, setProducts] = useState(null);
 
   const [active, setActive] = useState('ProductsList');
@@ -124,14 +125,12 @@ export function DashboardProducts({ cart, setCart }) {
         </h1>
 
         <div className={styles['products-list']}>
-          {active === 'ProductsList' && (
-            <ProductsList cart={cart} setCart={setCart} />
-          )}
-          {active === 'Clocks' && <Clocks cart={cart} setCart={setCart} />}
-          {active === 'Bags' && <Bags cart={cart} setCart={setCart} />}
-          {active === 'Wallets' && <Wallets cart={cart} setCart={setCart} />}
+          {active === 'ProductsList' && <ProductsList />}
+          {active === 'Clocks' && <Clocks />}
+          {active === 'Bags' && <Bags />}
+          {active === 'Wallets' && <Wallets />}
 
-          <FilterByColor color={active} cart={cart} setCart={setCart} />
+          <FilterByColor color={active} />
         </div>
       </section>
       <Footer />

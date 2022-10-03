@@ -1,18 +1,18 @@
 .o-square {
-  height: 600px;
-  padding: 1rem 4rem;
+  height: 550px;
+  padding: 0 4rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 500px;
   justify-content: center;
   align-items: center;
 }
 
 .container img {
   height: 500px;
-  width: 450px;
+  width: 500px;
 }
 
 .container .content {

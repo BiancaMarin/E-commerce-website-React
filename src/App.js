@@ -15,12 +15,8 @@ import { MessageDetails } from './features/UserProfile/Messages/MessageDetails';
 import { Messages } from './features/UserProfile/Messages/Messages';
 import { UserProfile } from './features/UserProfile/UserProfile';
 import { Wishlist } from './features/Wishlist/Wishlist';
-import { useState } from 'react';
 
 function App() {
-  const [cart, setCart] = useState([]);
-  console.log(cart);
-
   return (
     <>
       <AuthContextProvider>
@@ -28,15 +24,9 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route
-              path="/products"
-              element={<DashboardProducts cart={cart} setCart={setCart} />}
-            />
+            <Route path="/products" element={<DashboardProducts />} />
 
-            <Route
-              path="/cart"
-              element={<Cart cart={cart} setCart={setCart} />}
-            />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/products/add/" element={<AddProduct />} />
             <Route
               path="/productDetails/:productId"

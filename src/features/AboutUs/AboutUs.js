@@ -69,6 +69,7 @@ export function AboutUs() {
           </div>
           <div className={styles['images']}>
             <img
+              className={styles['bags']}
               src="https://i.pinimg.com/originals/a3/bc/bc/a3bcbc467b0193b8d60103aedb1dc964.jpg"
               alt=""
             />

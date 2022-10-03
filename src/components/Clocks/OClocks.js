@@ -1,11 +1,15 @@
 import styles from './OClocks.module.css';
+import { Link } from 'react-router-dom';
 
 export function OClocks() {
   return (
     <section className={styles['clocks']}>
       <div className={styles['container']}>
         <div className={styles['image']}>
-          <img src="../images/clocks.jpg" alt="clocks" />
+          <img
+            src="https://i1.wp.com/www.passioneorologio.it/wp-content/uploads/2018/08/oclock-obag-orologi-modelli.jpg?resize=1023%2C1024&ssl=1"
+            alt="clocks"
+          />
         </div>
         <div className={styles['content']}>
           <h1>O Clock</h1>
@@ -17,7 +21,9 @@ export function OClocks() {
             Enjoy matching many and coloured movements to practical straps in
             silicone.
           </p>
-          <button>Shop now</button>
+          <Link to="/products">
+            <button>Shop now</button>
+          </Link>
         </div>
       </div>
     </section>

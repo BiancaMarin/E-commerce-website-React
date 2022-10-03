@@ -1,9 +1,14 @@
+.main-navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #222831;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222831;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   position: relative;
   padding: 1.5rem 4rem;
   width: 100%;
@@ -43,14 +48,25 @@
   color: #32e0c4;
 }
 
-.navbar-menu li:hover::after {
-  content: '';
-  width: 30%;
-  height: 1px;
-  background-color: #32e0c4;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
+.navbar-second-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 1.5rem;
+}
+
+.navbar-second-menu li a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-second-menu li a:nth-child(3) {
+  color: #32e0c4;
+}
+
+.navbar-second-menu li a:hover {
+  color: #32e0c4;
 }
 
 .welcome {
@@ -58,6 +74,7 @@
   font-size: 1rem;
   font-weight: 400;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .welcome:hover {

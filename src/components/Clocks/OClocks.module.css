@@ -1,16 +1,16 @@
 .clocks {
-  height: 600px;
+  height: 550px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 550px 1fr;
+  grid-template-columns: 500px 1fr;
   margin: 0 4rem;
 }
 
 .container .image img {
-  height: 500px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
 }
 
 .container .content h1 {
