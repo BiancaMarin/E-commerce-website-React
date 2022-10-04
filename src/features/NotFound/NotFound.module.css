@@ -43,7 +43,7 @@
 }
 
 .not-found .btns button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   border: none;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);

@@ -19,13 +19,13 @@
 .second-column .name {
   font-size: 2rem;
   font-weight: 400;
-  border-bottom: 1px solid #222831;
+  border-bottom: 1px solid #231e23;
   margin-bottom: 1rem;
 }
 
 .second-column .name .lastName {
   font-size: 2rem;
-  color: #222831;
+  color: #231e23;
 }
 
 .second-column ul li:first-child {
@@ -52,15 +52,15 @@
   background-color: #dddddd;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid #06113c;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #06113c;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
 }
 
 .btns button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;

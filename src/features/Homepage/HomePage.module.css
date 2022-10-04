@@ -1,15 +1,17 @@
 .landing-page {
   height: 600px;
-  width: 100%;
   background-image: url('https://i.pinimg.com/originals/66/ea/28/66ea286665ab8c71abc0cba41741de29.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 8rem;
+  padding-top: 8em;
   padding-left: 4rem;
 }
 
@@ -20,15 +22,9 @@
   letter-spacing: 2px;
 }
 
-.landing-page .content p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #61bdf6;
-  padding-top: 0.5rem;
-}
-
 .landing-page .btn {
   padding-top: 3rem;
+  margin-left: 4rem;
 }
 
 .landing-page .btn button {
@@ -43,19 +39,42 @@
 }
 
 .landing-page .btn button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   border: none;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);
 }
 
-.trending {
-  height: 400px;
-  margin: 0 6rem;
-}
+@media screen and (max-width: 767px) {
+  .landing-page {
+    height: 280px;
+    background-size: cover;
+  }
 
-.trending h1 {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem 0;
+  .landing-page .content {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .landing-page .content h1 {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    padding-top: 2rem;
+  }
+
+  .landing-page .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .landing-page .btn button {
+    height: 2rem;
+    width: 7rem;
+
+    font-weight: 600;
+  }
 }

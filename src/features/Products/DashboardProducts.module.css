@@ -40,15 +40,15 @@
   background-color: #dddddd;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid #06113c;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #06113c;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
 }
 
 .dashboard .products .btns button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -74,18 +74,18 @@
   width: 6rem;
   height: 2rem;
   border: none;
-  background-color: #dddddd;
+  background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid #06113c;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #06113c;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
 }
 
 .dashboard .categories .btns button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -106,7 +106,7 @@
   align-items: center;
   padding: 1rem 0.5rem;
   border-radius: 8px;
-  background-color: #222831;
+  background-color: #231e23;
 }
 
 .dashboard .filter .filter-color .brown {

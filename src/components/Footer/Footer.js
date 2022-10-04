@@ -17,7 +17,7 @@ export function Footer() {
             icon={solid('bag-shopping')}
             className={styles['logo-bag']}
           />
-          O bag for You
+          O bag
         </NavLink>
         <p className={styles['copyright']}>
           <FontAwesomeIcon

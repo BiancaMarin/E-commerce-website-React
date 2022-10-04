@@ -3,7 +3,7 @@ import styles from './Reviews.module.css';
 export function Reviews() {
   return (
     <>
-      <h1 className={styles['title']}>Our O bag Lovers Reviews</h1>;
+      <h1 className={styles['title']}>Our O bag Lovers Reviews</h1>
       <section className={styles['reviews']}>
         <article className={styles['card']}>
           <h2>Great colors</h2>

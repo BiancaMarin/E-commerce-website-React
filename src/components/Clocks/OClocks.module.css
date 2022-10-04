@@ -1,5 +1,5 @@
 .clocks {
-  height: 550px;
+  height: 500px;
 }
 
 .container {
@@ -10,12 +10,12 @@
 
 .container .image img {
   height: 400px;
-  width: 400px;
+  border-radius: 8px;
 }
 
 .container .content h1 {
   font-size: 2.5rem;
-  color: #222831;
+  color: #231e23;
 }
 
 .container .content {
@@ -27,18 +27,82 @@
   height: 3rem;
   width: 8rem;
   border-radius: 8px;
-  border: 1px solid #222831;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #222831;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
   margin-top: 3rem;
 }
 
 .container .content button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+  }
+  .container .image img {
+    height: 280px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .content h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .content p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .container .content button {
+    height: 2rem;
+    width: 7rem;
+    margin: 1rem 0;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .clocks {
+    height: 420px;
+  }
+  .container {
+    grid-template-columns: 400px 1fr;
+  }
+
+  .container .image img {
+    height: 320px;
+  }
+
+  .container .content h1 {
+    font-size: 2rem;
+    color: #231e23;
+  }
+
+  .container .content p {
+    font-size: 0.8rem;
+  }
+
+  .container .content button {
+    height: 2.5rem;
+    width: 7rem;
+    margin: 1rem 0;
+  }
 }

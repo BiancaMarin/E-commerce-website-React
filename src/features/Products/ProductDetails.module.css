@@ -20,7 +20,7 @@
 }
 
 .product-details .container .title {
-  color: #222831;
+  color: #231e23;
   font-weight: 400;
   font-size: 2rem;
 }
@@ -43,7 +43,7 @@ span {
 
 .product-details .container .details .material {
   padding-bottom: 1rem;
-  color: #222831;
+  color: #231e23;
 }
 
 .product-details .container .details .color strong {
@@ -52,14 +52,14 @@ span {
 
 .product-details .container .details .color {
   padding-bottom: 1rem;
-  color: #222831;
+  color: #231e23;
 }
 
 .product-details .container .details .description {
   border-bottom: 1px solid #cfd2cf;
   padding-bottom: 1rem;
   margin-bottom: 4rem;
-  color: #222831;
+  color: #231e23;
   font-size: 0.8rem;
 }
 
@@ -73,15 +73,15 @@ span {
   height: 3rem;
   width: 10rem;
   border-radius: 8px;
-  border: 1px solid #222831;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #222831;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
 }
 
 .product-details .container .details .btns button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   border: none;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);

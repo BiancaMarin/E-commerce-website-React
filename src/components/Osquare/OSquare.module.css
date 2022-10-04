@@ -13,6 +13,7 @@
 .container img {
   height: 500px;
   width: 500px;
+  border-radius: 8px;
 }
 
 .container .content {
@@ -42,18 +43,88 @@
   height: 3rem;
   width: 8rem;
   border-radius: 8px;
-  border: 1px solid #222831;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #222831;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
   margin-top: 3rem;
 }
 
 .container .content button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   color: #fff;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 767px) {
+  .o-square {
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+  }
+
+  .container .content h2,
+  .container .content strong {
+    font-size: 1.5rem;
+  }
+
+  .container .content p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .container img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .container .content button {
+    height: 2rem;
+    width: 7rem;
+    margin: 1rem 0;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .o-square {
+    height: 420px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 330px;
+  }
+
+  .container img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .container .content h2,
+  .container .content strong {
+    font-size: 1.8rem;
+  }
+  .container .content h2,
+  .container .content strong {
+    font-size: 2rem;
+  }
+
+  .container .content p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .container .content button {
+    height: 2.5rem;
+    width: 7rem;
+    margin: 1rem 0;
+  }
 }

@@ -33,7 +33,7 @@
 .grid input {
   width: 15rem;
   border: none;
-  border-bottom: 1px solid #222831;
+  border-bottom: 1px solid #231e23;
 }
 
 .rating-value {
@@ -80,15 +80,15 @@
   width: 100%;
   height: 2rem;
   border-radius: 8px;
-  border: 1px solid #222831;
+  border: 1px solid #231e23;
   background-color: transparent;
-  color: #222831;
+  color: #231e23;
   font-weight: 400;
   cursor: pointer;
 }
 
 .grid .btn button:hover {
-  background-color: #222831;
+  background-color: #231e23;
   border: none;
   transition: 0.5s ease-in-out;
   transform: scale(0.9);

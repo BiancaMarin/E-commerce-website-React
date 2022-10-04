@@ -13,7 +13,6 @@ export function HomePage() {
       <section className={styles['landing-page']}>
         <div className={styles['content']}>
           <h1>Make your style with O bag</h1>
-          <p>Bags and accessories that every O bag Lover should have.</p>
         </div>
         <div className={styles['btn']}>
           <a href="/products">
