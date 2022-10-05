@@ -30,3 +30,9 @@
   right: 20px;
   top: 2px;
 }
+
+@media screen and (max-width: 767px) {
+  .products-list {
+    padding: 0 1.5rem;
+  }
+}

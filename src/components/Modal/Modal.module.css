@@ -59,3 +59,9 @@
 .trash {
   padding-left: 1rem;
 }
+
+@media screen and (max-width: 767px) {
+  .modal-container {
+    width: 65%;
+  }
+}

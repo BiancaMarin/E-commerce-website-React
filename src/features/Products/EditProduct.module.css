@@ -9,10 +9,12 @@
 .edit-product h3 {
   font-weight: 400;
   padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
 .edit-product .square-icon {
   padding-right: 0.5rem;
+  color: #32e0c4;
 }
 
 .grid {

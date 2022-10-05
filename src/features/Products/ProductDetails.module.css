@@ -2,6 +2,16 @@
   padding: 0 4rem;
 }
 
+.product-details h1 {
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.circle-info {
+  padding-right: 0.5rem;
+  color: #32e0c4;
+}
+
 .product-details .container {
   display: grid;
   grid-template-columns: 500px 1fr;
@@ -21,8 +31,9 @@
 
 .product-details .container .title {
   color: #231e23;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .product-details .container .star {
@@ -99,4 +110,86 @@ span {
   color: green;
   font-size: 0.9rem;
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .product-details {
+    padding: 0 1.5rem;
+  }
+  .product-details .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    height: 250px;
+  }
+
+  .product-details .container .title {
+    font-size: 0.8rem;
+  }
+
+  .product-details .container .details .price,
+  span {
+    font-size: 0.6rem;
+  }
+
+  .product-details .container p {
+    font-size: 0.6rem;
+  }
+
+  .product-details .container .details .description {
+    font-size: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-details .container .details .btns button {
+    height: 2rem;
+    width: 8rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .product-details {
+    padding: 0 1.5rem;
+  }
+
+  .product-details .container {
+    grid-template-columns: 350px 1fr;
+  }
+
+  .image {
+    height: 300px;
+    padding-left: 1.5rem;
+  }
+
+  .product-details .container .title {
+    font-size: 1rem;
+  }
+
+  .product-details .container .details .price,
+  span {
+    font-size: 0.8rem;
+  }
+
+  .product-details .container p {
+    font-size: 0.8rem;
+  }
+
+  .product-details .container .details .description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-details .container .details .btns button {
+    height: 2rem;
+    width: 8rem;
+  }
 }

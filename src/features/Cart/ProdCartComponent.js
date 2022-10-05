@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { useContext } from 'react';
-import { CartContext } from './CartContext';
 
 export function ProdCartComponent({ product, setCart, cart }) {
   const [counter, setCounter] = useState(1);

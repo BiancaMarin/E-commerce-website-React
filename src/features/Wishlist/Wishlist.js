@@ -30,6 +30,11 @@ export function Wishlist() {
   return (
     <>
       <Nav />
+      <h3 className={styles['wishlist-title']}>
+        <FontAwesomeIcon className={styles['heart']} icon={solid('heart')} />
+        {''}
+        Your Wishlist
+      </h3>
       <div className={styles['search-bar']}>
         <form>
           <input
@@ -38,17 +43,13 @@ export function Wishlist() {
             placeholder="Search..."
             onChange={handleSearchTerm}
           />
-          <button type="submit" className={styles['btn']}>
-            <FontAwesomeIcon icon={solid('magnifying-glass')} />{' '}
-          </button>
+          <FontAwesomeIcon
+            icon={solid('magnifying-glass')}
+            className={styles['search-icon']}
+          />{' '}
         </form>
       </div>
       <div className={styles['products-list']}>
-        <h3>
-          <FontAwesomeIcon className={styles['heart']} icon={solid('heart')} />
-          {''}
-          Your Wishlist
-        </h3>
         {wishProducts
           .filter((product) => {
             if (searchTerm === '') {

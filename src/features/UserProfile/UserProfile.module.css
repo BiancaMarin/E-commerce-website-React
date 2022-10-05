@@ -17,14 +17,14 @@
 }
 
 .second-column .name {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   border-bottom: 1px solid #231e23;
   margin-bottom: 1rem;
 }
 
 .second-column .name .lastName {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #231e23;
 }
 
@@ -35,7 +35,7 @@
 .btns {
   margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .btns .edit {
@@ -67,7 +67,17 @@
   transform: scale(0.9);
 }
 
+.circle-info {
+  padding-right: 0.5rem;
+  color: #32e0c4;
+}
+
 @media screen and (max-width: 767px) {
+  .user-title {
+    font-weight: 400;
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
   .container {
     display: flex;
     flex-direction: column;

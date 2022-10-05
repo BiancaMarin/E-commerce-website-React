@@ -58,7 +58,7 @@ export function AboutUs() {
             />
           </div>
         </section>
-        <section className={styles['section-colors']}>
+        <section className={styles['section']}>
           <div className={styles['info-colors']}>
             <h1>More Colors</h1>
             <p>
@@ -74,6 +74,7 @@ export function AboutUs() {
               alt=""
             />
             <img
+              className={styles['watches']}
               src="https://zapingmoda.files.wordpress.com/2013/10/ins_p_426652.jpg"
               alt=""
             />

@@ -33,7 +33,13 @@ export function UserProfile() {
     <>
       <section>
         <Nav />
-        <h1 className={styles['user-title']}>Account informations</h1>
+        <h1 className={styles['user-title']}>
+          <FontAwesomeIcon
+            className={styles['circle-info']}
+            icon={solid('circle-info')}
+          />
+          Account informations
+        </h1>
         <div className={styles['container']}>
           <div className={styles['first-column']}>
             <div>

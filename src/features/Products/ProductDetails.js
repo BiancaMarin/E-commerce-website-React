@@ -44,6 +44,13 @@ export function ProductDetails() {
     <>
       <Nav />
       <section className={styles['product-details']}>
+        <h1>
+          <FontAwesomeIcon
+            className={styles['circle-info']}
+            icon={solid('circle-info')}
+          />
+          Product details
+        </h1>
         <main className={styles['container']}>
           <div className={styles['image-container']}>
             <img

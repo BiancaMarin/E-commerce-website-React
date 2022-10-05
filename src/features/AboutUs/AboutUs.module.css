@@ -33,18 +33,11 @@ img {
   padding: 1rem 0;
 }
 
-.section-colors {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-colors .info-colors h1 {
+.section .info-colors h1 {
   color: #32e0c4;
 }
 
-.section-colors .images {
+.section .images {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,7 +46,106 @@ img {
 }
 
 .bags {
-  width: 800px;
-  justify-self: center;
-  align-self: center;
+  width: 500px;
+  height: 200px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.watches {
+  width: 500px;
+  height: 180px;
+}
+
+@media screen and (max-width: 767px) {
+  img {
+    height: 220px;
+  }
+  .about-page {
+    gap: 1rem;
+    margin: 1.5rem;
+  }
+  .section {
+    flex-direction: column;
+  }
+
+  .section .info-obag {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .info-obag h1 {
+    font-size: 1.2rem;
+  }
+
+  .section .info-obag p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .section .info-research {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .info-research h1 {
+    font-size: 1.2rem;
+  }
+
+  .section .info-research p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section .info-everywhere {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .info-everywhere h1 {
+    font-size: 1.2rem;
+  }
+
+  .section .info-everywhere p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section .info-colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .info-colors h1 {
+    font-size: 1.2rem;
+  }
+
+  .section .info-colors p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bags {
+    width: 300px;
+    height: 100px;
+  }
+
+  .watches {
+    width: 300px;
+    height: 100px;
+  }
 }

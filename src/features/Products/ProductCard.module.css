@@ -60,3 +60,24 @@
 .trash {
   padding-left: 0.5rem;
 }
+
+@media screen and (max-width: 767px) {
+  .image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .btns button {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #231e23;
+  }
+
+  .price .currency {
+    font-size: 0.8rem;
+  }
+}

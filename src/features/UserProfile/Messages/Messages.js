@@ -3,6 +3,8 @@ import styles from './Messages.module.css';
 import { Footer } from '../../../components/Footer/Footer';
 import { Nav } from '../../../components/Nav/Nav';
 import { MessageCard } from './MessageCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 export function Messages() {
   const [messages, setMessages] = useState(null);
@@ -21,7 +23,13 @@ export function Messages() {
     <>
       <Nav />
       <section className={styles['messages-page']}>
-        <h1>Your messages</h1>
+        <h1>
+          <FontAwesomeIcon
+            icon={solid('envelope')}
+            className={styles['envelope']}
+          />
+          Your messages
+        </h1>
         <div>
           {messages.map((message) => (
             <MessageCard key={message.id} message={message} />

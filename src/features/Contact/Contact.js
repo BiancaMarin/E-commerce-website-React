@@ -56,7 +56,13 @@ export function Contact() {
       <Nav />
       <main>
         <section className={styles['contact']}>
-          <h1>Get in touch</h1>
+          <h1>
+            <FontAwesomeIcon
+              className={styles['envelope']}
+              icon={solid('envelope')}
+            />
+            Get in touch
+          </h1>
           {message && <p className={styles['received']}>{message}</p>}
           <form onSubmit={handleSubmit}>
             <div className={styles['grid']}>
@@ -155,10 +161,9 @@ export function Contact() {
           </div>
           <div className={styles['map']}>
             <iframe
+              className={styles['map-sizes']}
               src="https://maps.google.com/maps?q=13%20decembrie%20brasov&t=&z=13&ie=UTF8&iwloc=&output=embed"
               title="adress"
-              width="500"
-              height="350"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
