@@ -1,18 +1,16 @@
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
-import { Footer } from '../../components/Footer/Footer';
-import { Nav } from '../../components/Nav/Nav';
-import styles from './DashboardProducts.module.css';
 import { Link } from 'react-router-dom';
+import { useAuthContext } from '../Auth/AuthContext';
+import { Nav } from '../../components/Nav/Nav';
+import { Footer } from '../../components/Footer/Footer';
 import { ProductsList } from './ProductsList';
 import { Bags } from '../Categories/Bags/Bags';
 import { Clocks } from '../Categories/Clocks/Clocks';
 import { Wallets } from '../Categories/Wallets/Wallets';
 import { FilterByColor } from '../FilterByColor/FilterByColor';
-import { useAuthContext } from '../Auth/AuthContext';
-import { useContext } from 'react';
-import { CartContext } from '../Cart/CartContext';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './DashboardProducts.module.css';
 
 export function DashboardProducts() {
   const [products, setProducts] = useState(null);

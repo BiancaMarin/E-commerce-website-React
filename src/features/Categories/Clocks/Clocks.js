@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import styles from './Clocks.module.css';
+import { useContext } from 'react';
+import { CartContext } from '../../Cart/CartContext';
 import { ProductCard } from '../../Products/ProductCard';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
-import { CartContext } from '../../Cart/CartContext';
+
+import styles from './Clocks.module.css';
 
 export function Clocks() {
   const [productsClock, setProductsClock] = useState(null);

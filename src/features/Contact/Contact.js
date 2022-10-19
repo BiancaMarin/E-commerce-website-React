@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useAuthContext } from '../Auth/AuthContext';
 import { Footer } from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
-import styles from './Contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './Contact.module.css';
 
 export function Contact() {
   const [values, setValues] = useState({

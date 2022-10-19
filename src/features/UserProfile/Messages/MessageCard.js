@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import './MessageCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import './MessageCard.css';
 
 export function MessageCard({ message }) {
   const [read, setRead] = useState(false);

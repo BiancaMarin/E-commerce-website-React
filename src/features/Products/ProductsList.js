@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { ProductCard } from './ProductCard';
-import styles from './ProductsList.module.css';
+import { CartContext } from '../Cart/CartContext';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
-import { CartContext } from '../Cart/CartContext';
+import styles from './ProductsList.module.css';
 
 export function ProductsList() {
   const { cart, setCart } = useContext(CartContext);

@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import {
@@ -7,6 +6,7 @@ import {
   faInstagram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import styles from './Footer.module.css';
 
 export function Footer() {
   return (

@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import { useAuthContext } from '../Auth/AuthContext';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
-import styles from './EditProduct.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './EditProduct.module.css';
 
 export function EditProduct() {
   const [values, setValues] = useState({

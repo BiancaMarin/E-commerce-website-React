@@ -1,9 +1,9 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './ProductCard.module.css';
+import { CartContext } from '../Cart/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { useContext } from 'react';
-import { CartContext } from '../Cart/CartContext';
+import styles from './ProductCard.module.css';
 
 export function ProductCard({ product }) {
   const { cart, setCart } = useContext(CartContext);

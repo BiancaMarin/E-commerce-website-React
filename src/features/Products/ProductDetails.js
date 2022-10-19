@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Nav } from '../../components/Nav/Nav';
-import styles from './ProductDetails.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { Footer } from '../../components/Footer/Footer';
 import { Modal } from '../../components/Modal/Modal';
 import { useAuthContext } from '../Auth/AuthContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './ProductDetails.module.css';
 
 export function ProductDetails() {
   const [product, setProduct] = useState(null);

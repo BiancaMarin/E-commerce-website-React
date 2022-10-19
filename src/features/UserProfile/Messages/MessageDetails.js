@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Nav } from '../../../components/Nav/Nav';
 import { Footer } from '../../../components/Footer/Footer';
-
 import styles from './MessageDetails.module.css';
 
 export function MessageDetails() {

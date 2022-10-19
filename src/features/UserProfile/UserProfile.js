@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useAuthContext } from '../Auth/AuthContext';
-import styles from './UserProfile.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { ModalUserDelete } from '../../components/Modal/ModalUserDelete';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+
+import styles from './UserProfile.module.css';
 
 export function UserProfile() {
   const [userAccount, setUserAccount] = useState(null);

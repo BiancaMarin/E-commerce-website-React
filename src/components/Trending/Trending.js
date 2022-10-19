@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import styles from './Trending.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { Link } from 'react-router-dom';
+
+import styles from './Trending.module.css';
 
 export function Trending() {
   const [products, setProducts] = useState(null);

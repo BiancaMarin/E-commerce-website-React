@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { ProductCard } from '../Products/ProductCard';
+import { CartContext } from '../Cart/CartContext';
 import { Footer } from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
-import styles from './Wishlist.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { ProductCard } from '../Products/ProductCard';
-import { useContext } from 'react';
-import { CartContext } from '../Cart/CartContext';
+
+import styles from './Wishlist.module.css';
 
 export function Wishlist() {
   const { cart, setCart } = useContext(CartContext);

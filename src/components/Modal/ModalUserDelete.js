@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useAuthContext } from '../../features/Auth/AuthContext';
-import styles from './Modal.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './Modal.module.css';
 
 export function ModalUserDelete({ closeModal }) {
   const navigate = useNavigate();

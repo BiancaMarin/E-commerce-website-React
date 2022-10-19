@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import styles from './Messages.module.css';
 import { Footer } from '../../../components/Footer/Footer';
 import { Nav } from '../../../components/Nav/Nav';
 import { MessageCard } from './MessageCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import styles from './Messages.module.css';
 
 export function Messages() {
   const [messages, setMessages] = useState(null);

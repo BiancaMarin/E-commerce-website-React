@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useAuthContext } from '../Auth/AuthContext';
-import styles from './AddProduct.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
+import styles from './AddProduct.module.css';
 
 export function AddProduct() {
   const [values, setValues] = useState({

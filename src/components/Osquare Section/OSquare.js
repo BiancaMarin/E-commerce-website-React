@@ -18,7 +18,7 @@ export function OSquare() {
         </div>
         <img
           className={styles['image']}
-          src="../images/img2.jpg"
+          src="../images/square.jpg"
           alt="square"
         />
       </div>

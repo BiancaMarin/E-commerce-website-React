@@ -1,12 +1,11 @@
 import { useState } from 'react';
+import { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import styles from './Nav.module.css';
+import { useAuthContext } from '../../features/Auth/AuthContext';
+import { CartContext } from '../../features/Cart/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { useAuthContext } from '../../features/Auth/AuthContext';
-import { Cart } from '../../features/Cart/Cart';
-import { useContext } from 'react';
-import { CartContext } from '../../features/Cart/CartContext';
+import styles from './Nav.module.css';
 
 export function Nav() {
   const { user, logout } = useAuthContext();

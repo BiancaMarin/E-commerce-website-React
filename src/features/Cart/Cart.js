@@ -1,21 +1,14 @@
-import styles from './Cart.module.css';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { ProdCartComponent } from './ProdCartComponent';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
-import { useState, useEffect } from 'react';
-import { useContext } from 'react';
-import { CartContext } from './CartContext';
+import styles from './Cart.module.css';
 
 export function Cart() {
-  const [total, setTotal] = useState();
-
   const { cart, setCart } = useContext(CartContext);
-
-  useEffect(() => {
-    setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
-  }, [cart]);
 
   return (
     <>
@@ -31,9 +24,7 @@ export function Cart() {
           Your Shopping Cart
         </h1>
       </div>
-      <div>
-        <p className={styles['total']}>Total: {total} EUR </p>
-      </div>
+
       <div>
         {cart.length === 0 && (
           <>
