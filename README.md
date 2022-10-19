@@ -9,8 +9,11 @@ $ git clone: https://github.com/BiancaMarin/e-commerce-website-project.git
 Install the packages and the libraries to run the project:
 
 $ npm install (install node modules)
+
 $ npm i json-server (install json-server)
+
 $ npm start
+
 $ npm run start:server
 
 ## Features
