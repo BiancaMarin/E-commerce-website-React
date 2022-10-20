@@ -1,5 +1,5 @@
 .landing-page {
-  height: 600px;
+  height: 300px;
   background-image: url('https://i.pinimg.com/originals/66/ea/28/66ea286665ab8c71abc0cba41741de29.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -16,14 +16,14 @@
 }
 
 .landing-page .content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
   letter-spacing: 2px;
 }
 
 .landing-page .btn {
-  padding-top: 3rem;
+  padding-top: 1rem;
   margin-left: 4rem;
 }
 
@@ -47,31 +47,27 @@
 
 @media screen and (max-width: 767px) {
   .landing-page {
-    height: 280px;
+    height: 200px;
     background-size: cover;
   }
 
   .landing-page .content {
-    justify-content: center;
-    align-items: center;
     padding: 1rem 1rem 0 1rem;
   }
 
   .landing-page .content h1 {
     font-size: 1.5rem;
-    justify-self: center;
-    align-self: center;
     padding-top: 2rem;
   }
 
   .landing-page .btn {
     padding-top: 2rem;
+    margin-left: 1rem;
   }
 
   .landing-page .btn button {
     height: 2rem;
     width: 7rem;
-
     font-weight: 600;
   }
 }

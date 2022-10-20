@@ -1,6 +1,6 @@
 # E-commerce React App
 
-Responsive basic e-commerce React App using React, Javascript, routing, CSS, AJAX and Fetch API, JSON Srver to mock interaction in the app.
+Responsive basic e-commerce React App using React, Javascript, routing, CSS, AJAX and Fetch API, JSON Server to mock interaction in the app.
 
 ## Getting started
 
@@ -18,17 +18,26 @@ $ npm run start:server
 
 ## Features
 
-1.  Login and Register pages functionality
-2.  Logout
-3.  Two types of user: admin and classic user
-4.  The classic user can view the products, add to wishlist/cart
-5.  The admin user can make all the operations of CRUD and to add the products to wishlist/cart
-6.  Edit and Delete profile page
-7.  Full CRUD (Create, Read, Update, Delete) on products entity
-8.  Filters on categories (clocks, bags, wallets) and on colors
-9.  Wishlist
-10. Shopping Cart
-11. Contact form
-12. All the forms are validated
+- [x] Login and Register pages functionality
+- [x] Logout functionality
+- [x] Two types of user: admin and classic user
+- [x] The classic user can view the products, add to wishlist/cart
+- [x] The admin user can make all the operations of CRUD and to add the products to wishlist/cart
+- [x] Edit and Delete profile page
+- [x] Full CRUD (Create, Read, Update, Delete) on products entity
+- [x] Filters on categories (clocks, bags, wallets) and on colors
+- [x] Wishlist
+- [x] Shopping Cart
+- [x] Search bar
+- [x] Contact form
+- [x] All the forms are validated
 
 ## Illustration
+
+### Homepage
+
+![Homepage](Homepage.png)
+
+### Dashboard
+
+![Dashboard](Dashboard.png)
