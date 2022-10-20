@@ -35,3 +35,5 @@ $ npm run start:server
 ## Illustration
 
 ![Homepage](./public/images/Homepage.png)
+
+![Operations](./public/images/Operations.png)

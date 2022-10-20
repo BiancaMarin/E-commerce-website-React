@@ -107,6 +107,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .edit-product h3 {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+  }
+
   .grid {
     display: flex;
     flex-direction: column;
