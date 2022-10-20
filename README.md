@@ -34,6 +34,12 @@ $ npm run start:server
 
 ## Illustration
 
+### Homepage
+
 ![Homepage](./public/images/Homepage.png)
 
+### Functionalities
+
 ![Operations](./public/images/Operations.png)
+
+###
