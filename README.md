@@ -34,10 +34,4 @@ $ npm run start:server
 
 ## Illustration
 
-### Homepage
-
 ![Homepage](./public/images/Homepage.png)
-
-### Dashboard
-
-![Dashboard](./public/images/Dashboard.png)
