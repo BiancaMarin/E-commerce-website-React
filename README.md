@@ -36,8 +36,8 @@ $ npm run start:server
 
 ### Homepage
 
-![Homepage](Homepage.png)
+![Homepage](./public/images/Homepage.png)
 
 ### Dashboard
 
-![Dashboard](Dashboard.png)
+![Dashboard](./public/images/Dashboard.png)
