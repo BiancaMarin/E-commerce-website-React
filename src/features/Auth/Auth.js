@@ -1,7 +1,7 @@
+import React from 'react';
 import { useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthContext } from './AuthContext';
-
 import styles from './Auth.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';

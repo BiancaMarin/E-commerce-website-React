@@ -47,7 +47,8 @@ export function Nav() {
           </li>
           <li>
             <NavLink to="/cart">
-              <FontAwesomeIcon icon={solid('shopping-cart')} />({cart.length})
+              <FontAwesomeIcon icon={solid('shopping-cart')} />
+              {user && <>({cart.length})</>}
             </NavLink>
           </li>
 

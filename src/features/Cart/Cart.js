@@ -6,8 +6,10 @@ import { ProdCartComponent } from './ProdCartComponent';
 import { Nav } from '../../components/Nav/Nav';
 import { Footer } from '../../components/Footer/Footer';
 import styles from './Cart.module.css';
+import { useAuthContext } from '../Auth/AuthContext';
 
 export function Cart() {
+  const { user } = useAuthContext();
   const { cart, setCart } = useContext(CartContext);
 
   return (
@@ -26,19 +28,23 @@ export function Cart() {
       </div>
 
       <div>
-        {cart.length === 0 && (
+        {user && (
           <>
-            <div className={styles['empty']}>Your cart is empty.</div>
+            {cart.length === 0 && (
+              <>
+                <div className={styles['empty']}>Your cart is empty.</div>
+              </>
+            )}
+            {cart.map((product) => (
+              <ProdCartComponent
+                key={product.id}
+                product={product}
+                cart={cart}
+                setCart={setCart}
+              />
+            ))}
           </>
         )}
-        {cart.map((product) => (
-          <ProdCartComponent
-            key={product.id}
-            product={product}
-            cart={cart}
-            setCart={setCart}
-          />
-        ))}
       </div>
 
       <Footer />

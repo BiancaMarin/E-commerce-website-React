@@ -80,13 +80,17 @@ export function ProductDetails() {
             </p>
             <p className={styles['description']}>{product.description}</p>
             <div className={styles['btns']}>
-              <button onClick={handleAddWishlist}>
-                Add to wishlist
-                <FontAwesomeIcon
-                  icon={solid('heart')}
-                  className={styles['heart']}
-                />
-              </button>
+              {user && (
+                <>
+                  <button onClick={handleAddWishlist}>
+                    Add to wishlist
+                    <FontAwesomeIcon
+                      icon={solid('heart')}
+                      className={styles['heart']}
+                    />
+                  </button>
+                </>
+              )}
 
               {user?.isAdmin && (
                 <>
